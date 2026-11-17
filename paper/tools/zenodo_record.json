@@ -1,35 +1,16 @@
 {
- "id": 24312265,
- "doi": "10.5281/zenodo.24312265",
+ "id": 24313556,
+ "doi": "10.5281/zenodo.24313556",
  "conceptdoi": "10.5281/zenodo.24301136",
- "version": "v6",
+ "version": "v7",
  "links": {
-  "self": "https://zenodo.org/api/records/24312265",
-  "html": "https://zenodo.org/records/24312265",
-  "doi": "https://doi.org/10.5281/zenodo.24312265",
+  "html": "https://zenodo.org/records/24313556",
+  "doi": "https://doi.org/10.5281/zenodo.24313556",
   "parent_doi": "https://doi.org/10.5281/zenodo.24301136",
-  "badge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.24312265.svg",
-  "conceptbadge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.24301136.svg",
-  "files": "https://zenodo.org/api/records/24312265/files",
-  "bucket": "https://zenodo.org/api/files/720e8256-1454-401d-85c5-984674eb4786",
-  "thumb250": "https://zenodo.org/record/24312265/thumb250",
-  "thumbs": {
-   "10": "https://zenodo.org/record/24312265/thumb10",
-   "50": "https://zenodo.org/record/24312265/thumb50",
-   "100": "https://zenodo.org/record/24312265/thumb100",
-   "250": "https://zenodo.org/record/24312265/thumb250",
-   "750": "https://zenodo.org/record/24312265/thumb750",
-   "1200": "https://zenodo.org/record/24312265/thumb1200"
-  },
-  "latest_draft": "https://zenodo.org/api/deposit/depositions/24312265",
-  "latest_draft_html": "https://zenodo.org/deposit/24312265",
-  "publish": "https://zenodo.org/api/deposit/depositions/24312265/actions/publish",
-  "edit": "https://zenodo.org/api/deposit/depositions/24312265/actions/edit",
-  "discard": "https://zenodo.org/api/deposit/depositions/24312265/actions/discard",
-  "newversion": "https://zenodo.org/api/deposit/depositions/24312265/actions/newversion",
-  "record": "https://zenodo.org/api/records/24312265",
-  "record_html": "https://zenodo.org/record/24312265",
-  "latest": "https://zenodo.org/api/records/24312265/versions/latest",
-  "latest_html": "https://zenodo.org/records/24312265/latest"
+  "pdf": "https://zenodo.org/records/24313556/files/Chu_2026_Illustrated_NeurIPS.pdf",
+  "latest_html": "https://zenodo.org/records/24313556/latest",
+  "newversion": "https://zenodo.org/api/deposit/depositions/24313556/actions/newversion",
+  "badge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.24313556.svg",
+  "conceptbadge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.24301136.svg"
  }
 }

@@ -7,8 +7,8 @@
 [![License: CC BY 4.0 / MIT](https://img.shields.io/badge/license-CC%20BY%204.0%20%2F%20MIT-lightgrey.svg)](LICENSE.md)
 
 **Vincent Chu** · University of Michigan · [PDF](paper/Chu_2026_Illustrated_NeurIPS.pdf) ·
-DOI [10.5281/zenodo.24301136](https://doi.org/10.5281/zenodo.24301136) (all versions; latest v6 =
-[10.5281/zenodo.24312265](https://doi.org/10.5281/zenodo.24312265)) · Live map: <https://vincentychu.com/neurips/> 
+DOI [10.5281/zenodo.24301136](https://doi.org/10.5281/zenodo.24301136) (all versions; latest v7 =
+[10.5281/zenodo.24313556](https://doi.org/10.5281/zenodo.24313556)) · Live map: <https://vincentychu.com/neurips/>
 
 > NeurIPS accepted 1,898 papers in 2020 and 9,111 in 2026. At that volume, reading the proceedings is no
 > longer how researchers learn the shape of the field. We present *Illustrated NeurIPS*, an open dataset and
@@ -56,7 +56,7 @@ DOI [10.5281/zenodo.24301136](https://doi.org/10.5281/zenodo.24301136) (all vers
 ```
 illustrated-neurips/
 ├── paper/                             the paper, its evaluation and results
-│   ├── Chu_2026_Illustrated_NeurIPS.pdf   the paper (v6, identical to the latest Zenodo version)
+│   ├── Chu_2026_Illustrated_NeurIPS.pdf   the paper (v7, identical to the latest Zenodo version)
 │   ├── main.tex, neurips_2025.sty         LaTeX source (NeurIPS style, preprint mode)
 │   ├── figures/                           Figure 1 (fig_map.pdf/.png) and Figure 2 (fig_years.pdf)
 │   ├── eval/                              evaluation code: one CLI per table or figure

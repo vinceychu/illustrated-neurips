@@ -82,20 +82,44 @@ def set_code_url(meta: dict[str, Any], url: str) -> None:
     meta["description"] = re.sub(r">github\.com/[\w.-]+/[\w.-]+<", f">{shown}<", desc)
 
 
-def set_default_preview(z: Zenodo, record_id: int | str, filename: str, *, published: bool) -> None:
-    """Make ``filename`` the file previewed on the record page (InvenioRDM ``files.default_preview``)."""
-    if published:  # editing a published record opens a draft of the same version (no new version)
+def update_rdm(z: Zenodo, record_id: int | str, preview: str, code_url: str | None, *, published: bool) -> None:
+    """Set ``files.default_preview`` (and the code link) through the InvenioRDM API.
+
+    The legacy deposit API can set neither reliably. On a published record this opens an
+    edit draft of the same version and republishes it; no new version is created.
+    """
+    if published:
         z.request(f"{RDM}/{record_id}/draft", b"", "POST", accept=RDM_JSON)
     draft = z.request(f"{RDM}/{record_id}/draft", accept=RDM_JSON)
-    draft.setdefault("files", {})["default_preview"] = filename
+    draft.setdefault("files", {})["default_preview"] = preview
+    meta = draft["metadata"]
+    if code_url:
+        rel = meta.setdefault("related_identifiers", [])
+        github = [r for r in rel if "github.com/" in r.get("identifier", "")]
+        for r in github:
+            r["identifier"] = code_url
+        if not github:
+            rel.append(
+                {
+                    "identifier": code_url,
+                    "scheme": "url",
+                    "relation_type": {"id": "issupplementedby"},
+                    "resource_type": {"id": "software"},
+                }
+            )
+        shown = code_url.removeprefix("https://")
+        desc = GITHUB_URL.sub(code_url, meta.get("description", ""))
+        meta["description"] = re.sub(r">github\.com/[\w.-]+/[\w.-]+<", f">{shown}<", desc)
     body = {k: draft[k] for k in ("metadata", "files", "access", "pids", "custom_fields") if k in draft}
-    z.request(f"{RDM}/{record_id}/draft", json.dumps(body).encode(), "PUT", RDM_JSON, accept=RDM_JSON)
+    z.request(f"{RDM}/{record_id}/draft", json.dumps(body).encode(), "PUT", accept=RDM_JSON)
     if published:
         z.request(f"{RDM}/{record_id}/draft/actions/publish", b"", "POST", accept=RDM_JSON)
 
 
-def default_preview(z: Zenodo, record_id: int | str) -> str | None:
-    return z.request(f"{RDM}/{record_id}", accept=RDM_JSON).get("files", {}).get("default_preview")
+def rdm_state(z: Zenodo, record_id: int | str) -> tuple[str | None, list[str]]:
+    rec = z.request(f"{RDM}/{record_id}", accept=RDM_JSON)
+    links = [r["identifier"] for r in rec["metadata"].get("related_identifiers", [])]
+    return rec.get("files", {}).get("default_preview"), links
 
 
 def new_version(
@@ -123,17 +147,19 @@ def new_version(
     z.request(f"{API}/{draft['id']}", json.dumps({"metadata": meta}).encode(), "PUT")
     print("files", [f["filename"] for f in z.request(f"{API}/{draft['id']}")["files"]])
     try:
-        set_default_preview(z, draft["id"], pdf.name, published=False)
+        update_rdm(z, draft["id"], pdf.name, code_url, published=False)
     except Exception as e:  # retried after publishing
-        print("could not set the default preview on the draft:", type(e).__name__)
+        print("could not update the draft through InvenioRDM:", type(e).__name__)
     if not publish:
         print("draft left unpublished (pass --publish to publish)")
         return draft
     d = z.request(f"{API}/{draft['id']}/actions/publish", b"", "POST")
     print("PUBLISHED", d.get("doi"), d.get("conceptdoi"), d["links"].get("record_html") or d["links"].get("html"))
-    if default_preview(z, d["id"]) != pdf.name:
-        set_default_preview(z, d["id"], pdf.name, published=True)
-    print("default preview:", default_preview(z, d["id"]))
+    preview, links = rdm_state(z, d["id"])
+    if preview != pdf.name or (code_url and code_url not in links):
+        update_rdm(z, d["id"], pdf.name, code_url, published=True)
+        preview, links = rdm_state(z, d["id"])
+    print("default preview:", preview, "| related:", links)
     return d
 
 

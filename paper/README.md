@@ -6,8 +6,8 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/paper-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
 **Vincent Chu** · University of Michigan · [PDF](Chu_2026_Illustrated_NeurIPS.pdf) ·
-DOI [10.5281/zenodo.24301136](https://doi.org/10.5281/zenodo.24301136) (all versions; latest v6 =
-[10.5281/zenodo.24312265](https://doi.org/10.5281/zenodo.24312265)) · Live map: <https://vincentychu.com/neurips/> ·
+DOI [10.5281/zenodo.24301136](https://doi.org/10.5281/zenodo.24301136) (all versions; latest v7 =
+[10.5281/zenodo.24313556](https://doi.org/10.5281/zenodo.24313556)) · Live map: <https://vincentychu.com/neurips/> ·
 Code: <https://github.com/vinceychu/illustrated-neurips>
 
 > NeurIPS accepted 1,898 papers in 2020 and 9,111 in 2026. At that volume, reading the proceedings is no
@@ -55,7 +55,7 @@ Code: <https://github.com/vinceychu/illustrated-neurips>
 
 ```
 paper/
-├── Chu_2026_Illustrated_NeurIPS.pdf   the paper (v6, identical to the latest Zenodo version)
+├── Chu_2026_Illustrated_NeurIPS.pdf   the paper (v7, identical to the latest Zenodo version)
 ├── main.tex, neurips_2025.sty         LaTeX source (NeurIPS style, preprint mode)
 ├── figures/                           Figure 1 (fig_map.pdf/.png) and Figure 2 (fig_years.pdf)
 ├── eval/                              evaluation code: one CLI per table or figure
