@@ -1,0 +1,39 @@
+{
+ "n": 73,
+ "human": {
+  "yes": 32,
+  "partly": 29,
+  "no": 12
+ },
+ "glm_same": {
+  "yes": 47,
+  "partly": 18,
+  "no": 8
+ },
+ "human_full_pct": 43.8,
+ "human_full_ci": [
+  33.0,
+  55.2
+ ],
+ "human_atleast_pct": 83.6,
+ "human_atleast_ci": [
+  73.4,
+  90.3
+ ],
+ "glm_full_pct": 64.4,
+ "glm_atleast_pct": 89.0,
+ "exact_agree_pct": 53.4,
+ "kappa": 0.23,
+ "binary_agree_pct": 83.6,
+ "pairs": {
+  "partly|yes": 17,
+  "yes|partly": 5,
+  "yes|yes": 27,
+  "partly|no": 4,
+  "no|no": 4,
+  "partly|partly": 8,
+  "no|partly": 5,
+  "no|yes": 3
+ },
+ "note": "Author topic labels saved at or after 2026-11-17T07:31Z; earlier labels in the export were made by an AI assistant and are excluded."
+}

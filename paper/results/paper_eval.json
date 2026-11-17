@@ -1,0 +1,217 @@
+{
+ "labelled": 20606,
+ "n_full": 214,
+ "n_top": 119,
+ "cluster": {
+  "ours_umap_kmeans": {
+   "nmi_full": 0.43,
+   "ari_full": 0.0797,
+   "hom": 0.4665,
+   "comp": 0.3987,
+   "v": 0.43,
+   "nmi_top": 0.2955,
+   "ari_top": 0.1202
+  },
+  "kmeans_raw_emb": {
+   "nmi_full": 0.4224,
+   "ari_full": 0.062,
+   "hom": 0.4631,
+   "comp": 0.3883,
+   "v": 0.4224,
+   "nmi_top": 0.2912,
+   "ari_top": 0.0973
+  },
+  "tfidf_lsa_kmeans": {
+   "nmi_full": 0.3872,
+   "ari_full": 0.0522,
+   "hom": 0.4255,
+   "comp": 0.3552,
+   "v": 0.3872,
+   "nmi_top": 0.2567,
+   "ari_top": 0.0756
+  },
+  "random": {
+   "nmi_full": 0.1746,
+   "ari_full": -0.0,
+   "hom": 0.1931,
+   "comp": 0.1594,
+   "v": 0.1746,
+   "nmi_top": 0.0242,
+   "ari_top": 0.0001
+  }
+ },
+ "kmeans_raw_seeds": [
+  [
+   0.4224,
+   0.062,
+   0.2912
+  ],
+  [
+   0.4203,
+   0.0601,
+   0.2916
+  ],
+  [
+   0.4196,
+   0.0637,
+   0.2929
+  ]
+ ],
+ "retrieval": {
+  "bge_small_title_to_abstract": {
+   "mrr": 0.8334,
+   "r1": 0.7735,
+   "r10": 0.9335,
+   "r100": 0.984,
+   "median_rank": 1.0
+  },
+  "bge_small_title_to_abstract_instr": {
+   "mrr": 0.8759,
+   "r1": 0.832,
+   "r10": 0.949,
+   "r100": 0.988,
+   "median_rank": 1.0
+  },
+  "tfidf_title_to_abstract": {
+   "mrr": 0.7605,
+   "r1": 0.6855,
+   "r10": 0.8915,
+   "r100": 0.97,
+   "median_rank": 1.0
+  },
+  "hybrid_bge_tfidf": {
+   "mrr": 0.8298,
+   "r1": 0.7685,
+   "r10": 0.94,
+   "r100": 0.9895,
+   "median_rank": 1.0
+  }
+ },
+ "retrieval_n_queries": 2000,
+ "retrieval_n_docs": 26632,
+ "labels_v2": {
+  "n": 20606,
+  "n_full": 156,
+  "n_top": 30,
+  "top": [
+   [
+    "Applications",
+    3675
+   ],
+   [
+    "Deep Learning",
+    3343
+   ],
+   [
+    "Computer Vision",
+    3139
+   ],
+   [
+    "Social Aspects",
+    1602
+   ],
+   [
+    "Theory",
+    1545
+   ],
+   [
+    "Reinforcement Learning",
+    1424
+   ],
+   [
+    "Optimization",
+    1248
+   ],
+   [
+    "General Machine Learning",
+    1028
+   ],
+   [
+    "Probabilistic Methods",
+    541
+   ],
+   [
+    "Miscellaneous Aspects of Machine Learning",
+    494
+   ],
+   [
+    "Data-centric AI",
+    454
+   ],
+   [
+    "Generative Models",
+    387
+   ]
+  ],
+  "by_year": {
+   "2023": 3405,
+   "2024": 4092,
+   "2025": 5504,
+   "2026": 7605
+  }
+ },
+ "cluster_v2": {
+  "ours": {
+   "nmi_fine": 0.4245,
+   "ari_fine": 0.0859,
+   "nmi_coarse": 0.2671,
+   "ari_coarse": 0.1104
+  },
+  "kmeans_raw_s0": {
+   "nmi_fine": 0.4151,
+   "ari_fine": 0.0653,
+   "nmi_coarse": 0.2617,
+   "ari_coarse": 0.0942
+  },
+  "kmeans_raw_s1": {
+   "nmi_fine": 0.4128,
+   "ari_fine": 0.0635,
+   "nmi_coarse": 0.2612,
+   "ari_coarse": 0.1016
+  },
+  "kmeans_raw_s2": {
+   "nmi_fine": 0.4119,
+   "ari_fine": 0.067,
+   "nmi_coarse": 0.2627,
+   "ari_coarse": 0.1039
+  },
+  "tfidf_lsa": {
+   "nmi_fine": 0.3766,
+   "ari_fine": 0.0555,
+   "nmi_coarse": 0.2296,
+   "ari_coarse": 0.0759
+  },
+  "random": {
+   "nmi_fine": 0.146,
+   "ari_fine": 0.0,
+   "nmi_coarse": 0.007,
+   "ari_coarse": 0.0001
+  }
+ },
+ "bootstrap_ours_minus_kmeans": {
+  "nmi_fine": {
+   "mean": 0.0086,
+   "lo": 0.0062,
+   "hi": 0.011,
+   "frac_pos": 1.0
+  },
+  "ari_fine": {
+   "mean": 0.0203,
+   "lo": 0.018,
+   "hi": 0.023,
+   "frac_pos": 1.0
+  },
+  "nmi_coarse": {
+   "mean": 0.0054,
+   "lo": 0.0015,
+   "hi": 0.0093,
+   "frac_pos": 0.997
+  },
+  "ari_coarse": {
+   "mean": 0.0161,
+   "lo": 0.0131,
+   "hi": 0.0192,
+   "frac_pos": 1.0
+  }
+ }
+}

@@ -1,0 +1,11 @@
+# Exact versions used to produce the committed results (Python 3.14).
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+# retrieval.py (Table 3); a CUDA build of torch makes it fast
+sentence-transformers==6.3.0
+transformers==5.23.0
+torch==2.15.0
+# map pipeline (scripts/neurips/layout.py)
+umap-learn==0.6.0

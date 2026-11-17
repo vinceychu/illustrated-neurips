@@ -1,0 +1,12 @@
+main.pdf
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+build/
+data/
+__pycache__/
+.pytest_cache/
+.ruff_cache/

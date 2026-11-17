@@ -1,0 +1,163 @@
+<title>NeurIPS Map Check</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one paper card at a time, a progress rail on top, three big verdict buttons under the card. */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --fg:#14171f; --muted:#5d6472; --line:#dde0e6;
+  --accent:#3b4fd8; --accent-soft:#e7eafc;
+  --yes:#1f8a5b; --part:#b7791f; --no:#c2413a;
+  --display:"Space Grotesk",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1117; --surface:#171a22; --fg:#e8eaf0; --muted:#9aa1b0; --line:#2a2f3b;
+  --accent:#8b9bff; --accent-soft:#232a4d; --yes:#4cc38a; --part:#e0a542; --no:#f0716a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1117; --surface:#171a22; --fg:#e8eaf0; --muted:#9aa1b0; --line:#2a2f3b;
+  --accent:#8b9bff; --accent-soft:#232a4d; --yes:#4cc38a; --part:#e0a542; --no:#f0716a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--body)}
+.wrap{max-width:720px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:16px}
+header{display:grid;gap:6px}
+h1{font:600 22px/1.2 var(--display);margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:62ch}
+.rail{display:grid;gap:6px}
+.bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.meta{display:flex;flex-wrap:wrap;gap:8px 16px;font:12px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{font:500 13px var(--body);padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:14px;min-width:0}
+.eyebrow{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.title{font:600 18px/1.35 var(--display);margin:0;text-wrap:balance}
+.ab{margin:0;color:var(--fg);opacity:.9;font-size:14px}
+.topic{border-left:3px solid var(--accent);padding:4px 0 4px 12px;display:grid;gap:4px}
+.topic b{font:600 16px var(--display)}
+.topic span{color:var(--muted);font-size:13px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cols>div{min-width:0;display:grid;gap:6px;align-content:start}
+@media (max-width:560px){.cols{grid-template-columns:1fr}}
+.q{font:500 15px var(--body);margin:0}
+.btns{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.btns button{font:600 15px var(--body);padding:14px 8px;border-radius:8px;border:1.5px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer;display:grid;gap:2px}
+.btns button small{font:400 11px var(--mono);color:var(--muted)}
+.btns button[data-v="yes"]{border-color:color-mix(in srgb,var(--yes) 45%,var(--line))}
+.btns button[data-v="partly"]{border-color:color-mix(in srgb,var(--part) 45%,var(--line))}
+.btns button[data-v="no"]{border-color:color-mix(in srgb,var(--no) 45%,var(--line))}
+.btns button.on[data-v="yes"]{background:var(--yes);color:#fff;border-color:var(--yes)}
+.btns button.on[data-v="partly"]{background:var(--part);color:#fff;border-color:var(--part)}
+.btns button.on[data-v="no"]{background:var(--no);color:#fff;border-color:var(--no)}
+.btns button.on small{color:inherit;opacity:.85}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.nav button{font:500 14px var(--body);padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.status{font:12px var(--mono);color:var(--muted)}
+.status.err{color:var(--no)}
+a{color:var(--accent)}
+.done{text-align:center;padding:28px 20px}
+.done h2{font:600 20px var(--display);margin:0 0 6px}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Check the NeurIPS map</h1>
+    <p class="sub">200 quick calls for the paper: does each paper sit under the right topic, and is each arXiv match the same paper? Go with your first read. Keys: 1 yes, 2 partly, 3 no, ← → to move. <a href="paper.pdf" target="_blank" rel="noopener">Read the paper draft (PDF)</a>. Section 5.3 already uses an independent AI judge; labels you add here would let the paper also report a human check.</p>
+  </header>
+  <div class="rail">
+    <div class="bar"><i id="fill"></i></div>
+    <div class="meta"><span id="count">0 / 200 done</span><span id="split"></span><span id="status" class="status">Connecting to storage…</span></div>
+  </div>
+  <div class="tabs" role="group" aria-label="Section">
+    <button id="tab-topic" aria-pressed="true">Topics (150)</button>
+    <button id="tab-arxiv" aria-pressed="false">arXiv matches (50)</button>
+    <button id="tab-skip" aria-pressed="false">Next unlabelled</button>
+  </div>
+  <article class="card" id="card"><p class="sub">Loading papers…</p></article>
+  <div class="btns" id="btns">
+    <button data-v="yes" id="b-yes">Yes<small>1</small></button>
+    <button data-v="partly" id="b-partly">Partly<small>2</small></button>
+    <button data-v="no" id="b-no">No<small>3</small></button>
+  </div>
+  <div class="nav"><button id="prev">← Back</button><span class="status" id="pos"></span><button id="next">Next →</button></div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let items = [], idx = 0, labels = {}, db = null, canWrite = true, me = null;
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function setStatus(t, err){ const s = $('#status'); s.textContent = t; s.classList.toggle('err', !!err); }
+
+function render(){
+  if (!items.length) return;
+  const it = items[idx], v = labels[it.id];
+  const card = $('#card');
+  if (it.kind === 'topic') {
+    card.innerHTML = `<div class="eyebrow">Topic check · NeurIPS ${it.y}</div>
+      <h2 class="title">${esc(it.t)}</h2>
+      <p class="ab">${esc(it.ab)}${it.ab.length >= 700 ? '…' : ''}</p>
+      <div class="topic"><span>Placed under</span><b>${esc(it.topic)}</b><span>${esc(it.blurb)}</span><span>Area: ${esc(it.area)}</span></div>
+      <p class="q">Does this topic describe the paper?</p>`;
+  } else {
+    card.innerHTML = `<div class="eyebrow">arXiv match · NeurIPS ${it.y}</div>
+      <h2 class="title">${esc(it.t)}</h2>
+      <div class="cols"><div><span class="eyebrow">NeurIPS abstract</span><p class="ab">${esc(it.ab)}…</p></div>
+      <div><span class="eyebrow">arXiv <a href="https://arxiv.org/abs/${esc(it.ax)}" target="_blank" rel="noopener">${esc(it.ax)}</a></span><p class="ab">${esc(it.axab)}…</p></div></div>
+      <p class="q">Same paper? (Partly = same work, clearly different version)</p>`;
+  }
+  document.querySelectorAll('.btns button').forEach(b => b.classList.toggle('on', b.dataset.v === v));
+  $('#pos').textContent = `${idx + 1} of ${items.length}`;
+  $('#tab-topic').setAttribute('aria-pressed', it.kind === 'topic');
+  $('#tab-arxiv').setAttribute('aria-pressed', it.kind === 'arxiv');
+  const n = Object.keys(labels).filter(k => items.some(i => i.id === k)).length;
+  $('#count').textContent = `${n} / ${items.length} done`;
+  $('#fill').style.width = (100 * n / items.length) + '%';
+  const c = {yes:0, partly:0, no:0}; Object.values(labels).forEach(x => c[x] = (c[x] || 0) + 1);
+  $('#split').textContent = `yes ${c.yes} · partly ${c.partly} · no ${c.no}`;
+  if (n === items.length && !render.celebrated) { render.celebrated = true; setStatus('All 200 done. Tell Claude and the paper gets these numbers.'); }
+}
+
+async function vote(v){
+  const it = items[idx]; if (!it) return;
+  if (!canWrite) { setStatus('Read-only here: only the owner can save labels.', true); return; }
+  labels[it.id] = v; render();
+  if (db) {
+    try { await db.collection('labels').doc(it.id).set({v, kind: it.kind, at: Date.now(), by: me || 'unknown', rater: 'human'}); setStatus('Saved'); }
+    catch (e) { setStatus('Not saved: ' + (e.message || e.code || 'storage error') + '. Your choice is kept on screen; tap it again to retry.', true); }
+  } else setStatus('Storage unavailable: labels are not being saved.', true);
+  setTimeout(() => { if (idx < items.length - 1) { idx++; render(); } }, 160);
+}
+function go(d){ idx = Math.max(0, Math.min(items.length - 1, idx + d)); render(); }
+function firstUnlabelled(kind){ const j = items.findIndex(i => (!kind || i.kind === kind) && !labels[i.id]); return j < 0 ? items.findIndex(i => !kind || i.kind === kind) : j; }
+
+document.querySelectorAll('.btns button').forEach(b => b.addEventListener('click', () => vote(b.dataset.v)));
+$('#prev').onclick = () => go(-1); $('#next').onclick = () => go(1);
+$('#tab-topic').onclick = () => { idx = firstUnlabelled('topic'); render(); };
+$('#tab-arxiv').onclick = () => { idx = firstUnlabelled('arxiv'); render(); };
+$('#tab-skip').onclick = () => { idx = Math.max(0, firstUnlabelled()); render(); };
+document.addEventListener('keydown', e => {
+  if (e.target.closest('input,textarea')) return;
+  if (e.key === '1') vote('yes'); else if (e.key === '2') vote('partly'); else if (e.key === '3') vote('no');
+  else if (e.key === 'ArrowLeft') go(-1); else if (e.key === 'ArrowRight') go(1);
+});
+
+(async () => {
+  try { items = await (await fetch('items.json')).json(); }
+  catch { $('#card').innerHTML = '<p class="sub">Could not load the paper list. Reload the page.</p>'; return; }
+  render();
+  const timer = setTimeout(() => setStatus('Storage is slow to answer. You can keep going; labels save once it connects.', true), 10000);
+  db = await claude.use('db');
+  const user = await claude.use('user');
+  if (user) { const w = await user.can('data.write'); if (w === false) canWrite = false; try { me = await user.id(); } catch {} }
+  if (!db) { clearTimeout(timer); setStatus('Storage unavailable here: open this page signed in to claude.ai to save labels.', true); return; }
+  let first = true;
+  db.collection('labels').onSnapshot(snap => {
+    clearTimeout(timer);
+    labels = {}; snap.docs.forEach(d => { const x = d.data(); if (x && x.v) labels[d.id] = x.v; });
+    if (first) { first = false; idx = Math.max(0, firstUnlabelled()); setStatus(canWrite ? 'Connected. Labels save as you go.' : 'Read-only view.'); }
+    render();
+  }, e => { clearTimeout(timer); setStatus('Storage error: ' + (e.message || e.code) + '. Reload to reconnect.', true); });
+})();
+</script>

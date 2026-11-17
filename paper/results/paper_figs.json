@@ -1,0 +1,207 @@
+{
+ "risers": [
+  [
+   "LLM Agent Benchmarks",
+   0,
+   224,
+   0.0,
+   1.5
+  ],
+  [
+   "RL with Verifiable Rewards",
+   0,
+   167,
+   0.0,
+   1.12
+  ],
+  [
+   "AI Scientists, Agents and Debate",
+   0,
+   123,
+   0.0,
+   0.82
+  ],
+  [
+   "LLM Agent Security",
+   0,
+   114,
+   0.0,
+   0.76
+  ],
+  [
+   "LLM-as-a-Judge Evaluation",
+   0,
+   104,
+   0.0,
+   0.69
+  ],
+  [
+   "LLM and LVLM Hallucination",
+   0,
+   82,
+   0.0,
+   0.55
+  ]
+ ],
+ "fallers": [
+  [
+   "Generative Adversarial Networks",
+   43,
+   2,
+   1.02,
+   0.01
+  ],
+  [
+   "Adversarial Robustness",
+   95,
+   25,
+   2.24,
+   0.17
+  ],
+  [
+   "Network Pruning and Lottery Tickets",
+   39,
+   12,
+   0.92,
+   0.08
+  ],
+  [
+   "Meta-Learning",
+   47,
+   18,
+   1.11,
+   0.12
+  ],
+  [
+   "Mutual Information and Probabilistic Circuits",
+   34,
+   17,
+   0.8,
+   0.11
+  ],
+  [
+   "Training Dynamics and Sparsity",
+   31,
+   19,
+   0.73,
+   0.13
+  ]
+ ],
+ "cites": {
+  "n_with": 22130,
+  "n_entries": 26172,
+  "median": 9.0,
+  "oa": 16979,
+  "s2": 21946
+ },
+ "landmarks": {
+  "n": 1035,
+  "topics": 213,
+  "venues": [
+   [
+    "arXiv",
+    133
+   ],
+   [
+    "ICLR",
+    127
+   ],
+   [
+    "CVPR",
+    123
+   ],
+   [
+    "ICML",
+    110
+   ],
+   [
+    "ICCV",
+    36
+   ],
+   [
+    "ECCV",
+    27
+   ],
+   [
+    "TPAMI",
+    23
+   ],
+   [
+    "ACL",
+    23
+   ],
+   [
+    "AAAI",
+    22
+   ],
+   [
+    "EMNLP",
+    15
+   ]
+  ],
+  "median_cites": 779.0,
+  "years": {
+   "2020": 270,
+   "2021": 209,
+   "2022": 166,
+   "2023": 207,
+   "2024": 122,
+   "2025": 49,
+   "2026": 12
+  }
+ },
+ "coarse_names": {
+  "0": "Graph Neural Networks",
+  "1": "LLM Reasoning via RL",
+  "2": "Audio, Hallucination, Watermarking",
+  "3": "Bandits and Algorithmic Fairness",
+  "4": "Multimodal LLMs and Video",
+  "5": "Image Generation and Segmentation",
+  "6": "Molecular and Protein Modeling",
+  "7": "Statistical Learning Theory",
+  "8": "Transformer Mechanics and Adaptation",
+  "9": "3D Reconstruction and Rendering",
+  "10": "Sampling and Variational Inference",
+  "11": "RL Theory and Games",
+  "12": "LLM Agents and Benchmarks",
+  "13": "LLM Safety and Jailbreaks",
+  "14": "Self-Supervised and Label-Efficient Learning",
+  "15": "Federated Learning and Privacy",
+  "16": "Causal Inference and Recommendation",
+  "17": "Vision Transformers and GANs",
+  "18": "LLM Training and Evaluation",
+  "19": "Computational Neuroscience and SNNs",
+  "20": "Stochastic and Bilevel Optimization",
+  "21": "Deep and Offline RL",
+  "22": "Adversarial Robustness and Backdoors",
+  "23": "Robotics and VLA Models",
+  "24": "Deep Learning Theory",
+  "25": "Diffusion Theory and Sampling",
+  "26": "Neural PDEs and Physics",
+  "27": "Medical Imaging AI",
+  "28": "Efficient LLM Inference",
+  "29": "Time Series Forecasting"
+ },
+ "example_fine": [
+  {
+   "name": "Computational Social Choice",
+   "blurb": "Voting rules, distortion bounds, peer prediction, sortition and fair allocation mechanisms that aggregate preferences truthfully and proportionally; steady output, rising in 2026."
+  },
+  {
+   "name": "Clustering Algorithms",
+   "blurb": "Gives approximation, coreset, private, streaming and parallel algorithms for k-means, k-median, correlation and hierarchical clustering, with steady output and a 2026 rise."
+  },
+  {
+   "name": "Causal Discovery and Identifiability",
+   "blurb": "Learns causal graphs and causal representations from observational and interventional data, handling latent confounders and multiple environments; growing, with a 2026 jump."
+  },
+  {
+   "name": "ReLU Network Theory and NTK",
+   "blurb": "Analyzes shallow and wide ReLU networks through neural tangent kernels, spurious minima, implicit bias, stable minima and linear regions; steady output since 2020."
+  },
+  {
+   "name": "Surrogate Loss Consistency",
+   "blurb": "Studies H-consistency and Bayes-consistency of surrogate losses, multiclass boosting, learning to defer and AUC optimization in classification theory, with steady output every year."
+  }
+ ]
+}

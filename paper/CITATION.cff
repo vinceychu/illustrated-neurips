@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: dataset
+title: "Illustrated NeurIPS: A Navigable Map of 30,225 NeurIPS Papers (2020–2026) with Linked arXiv Records, Citations and Landmark Papers"
+authors:
+  - family-names: Chu
+    given-names: Vincent
+    affiliation: University of Michigan
+    email: vcx@umich.edu
+version: v6
+doi: 10.5281/zenodo.24301136
+date-released: 2026-11-17
+license: CC-BY-4.0
+url: "https://vincentychu.com/neurips/"
+repository-code: "https://github.com/vinceychu/illustrated-neurips"
+keywords:
+  - NeurIPS
+  - science of science
+  - scholarly data
+  - topic modeling
+  - embeddings
+  - UMAP
+preferred-citation:
+  type: generic
+  title: "Illustrated NeurIPS: A Navigable Map of 30,225 NeurIPS Papers (2020–2026) with Linked arXiv Records, Citations and Landmark Papers"
+  authors:
+    - family-names: Chu
+      given-names: Vincent
+      affiliation: University of Michigan
+  year: 2026
+  doi: 10.5281/zenodo.24301136
+  notes: Preprint

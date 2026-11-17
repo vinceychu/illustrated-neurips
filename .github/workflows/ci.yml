@@ -1,0 +1,32 @@
+name: CI
+# Lint the evaluation code, run the tests and check every number in the paper against
+# paper/results/. Data-free; about 30 s.
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    defaults:
+      run:
+        working-directory: paper
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -r requirements-dev.txt
+      - run: make lint
+      - run: make test
+      - run: make check
+      - name: Shell scripts parse
+        run: bash -n ../scripts/neurips/build_site_data.sh

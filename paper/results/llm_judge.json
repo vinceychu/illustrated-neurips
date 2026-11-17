@@ -1,0 +1,1520 @@
+{
+ "model": "glm-5.3-flash",
+ "summary": {
+  "topic": {
+   "partly": 40,
+   "no": 20,
+   "yes": 90
+  },
+  "arxiv": {
+   "yes": 50
+  },
+  "control": {
+   "no": 46,
+   "partly": 2,
+   "yes": 2
+  }
+ },
+ "items": [
+  {
+   "kind": "topic",
+   "id": "t243",
+   "v": "partly",
+   "why": "Time series data, but focus is interpretability benchmarking, not forecasting."
+  },
+  {
+   "kind": "topic",
+   "id": "t654",
+   "v": "partly",
+   "why": "Models human visual search optimality, but focus is ideal observer detectability, not deep network comparison."
+  },
+  {
+   "kind": "topic",
+   "id": "t1029",
+   "v": "no",
+   "why": "Paper studies hypernetwork modularity/expressivity, not neural collapse or training dynamics."
+  },
+  {
+   "kind": "topic",
+   "id": "t1048",
+   "v": "yes",
+   "why": "Paper proposes a training method for parallel speech synthesis (TTS)."
+  },
+  {
+   "kind": "topic",
+   "id": "t1325",
+   "v": "no",
+   "why": "Paper is about Bayesian coresets, not mutual information or probabilistic circuits."
+  },
+  {
+   "kind": "topic",
+   "id": "t1761",
+   "v": "partly",
+   "why": "Video-text representation learning, not long-video QA/LLM benchmarks"
+  },
+  {
+   "kind": "topic",
+   "id": "t210",
+   "v": "no",
+   "why": "Paper is about cost-efficient ML API selection, not dataset documentation or curation."
+  },
+  {
+   "kind": "topic",
+   "id": "t1810",
+   "v": "yes",
+   "why": "Paper directly develops Wasserstein DRO methods for robust SVM."
+  },
+  {
+   "kind": "topic",
+   "id": "t457",
+   "v": "partly",
+   "why": "Studies L2 regularization dynamics and wide-network theory, but not NTK/ReLU focus"
+  },
+  {
+   "kind": "topic",
+   "id": "t1832",
+   "v": "yes",
+   "why": "Identifiability of deep models via nonlinear ICA fits topic directly."
+  },
+  {
+   "kind": "topic",
+   "id": "t1230",
+   "v": "no",
+   "why": "Paper is about equivariant spherical CNNs, not dynamical systems."
+  },
+  {
+   "kind": "topic",
+   "id": "t4177",
+   "v": "partly",
+   "why": "Proximal methods for convex matrix optimization, but focus is Jacobi-based eigendecomposition speedup, not convergence theory."
+  },
+  {
+   "kind": "topic",
+   "id": "t3620",
+   "v": "yes",
+   "why": "Spectral graph filter learning is core GNN methodology."
+  },
+  {
+   "kind": "topic",
+   "id": "t4141",
+   "v": "yes",
+   "why": "Regret minimax bounds for stochastic shortest path MDPs fit directly."
+  },
+  {
+   "kind": "topic",
+   "id": "t3908",
+   "v": "yes",
+   "why": "Meta-learning regret bounds for online learning with expert-forecaster techniques fits OCO regret topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t3704",
+   "v": "yes",
+   "why": "Paper directly studies domain generalization and ERM under distribution shift."
+  },
+  {
+   "kind": "topic",
+   "id": "t2880",
+   "v": "yes",
+   "why": "Video-to-speech synthesis fits audio generation topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t1908",
+   "v": "yes",
+   "why": "Paper directly concerns differential privacy guarantees for exponential mechanism sampling."
+  },
+  {
+   "kind": "topic",
+   "id": "t2228",
+   "v": "yes",
+   "why": "Uses GAN framework for realistic noisy image generation."
+  },
+  {
+   "kind": "topic",
+   "id": "t2351",
+   "v": "yes",
+   "why": "Extends transformers to graphs/hypergraphs, matching graph transformers focus."
+  },
+  {
+   "kind": "topic",
+   "id": "t3074",
+   "v": "partly",
+   "why": "Regret bounds for surrogate losses, not online convex optimization."
+  },
+  {
+   "kind": "topic",
+   "id": "t2299",
+   "v": "no",
+   "why": "Paper is about negative sampling estimation, not kernel-based hypothesis testing."
+  },
+  {
+   "kind": "topic",
+   "id": "t3739",
+   "v": "partly",
+   "why": "UED/curriculum RL, not meta or goal-conditioned RL"
+  },
+  {
+   "kind": "topic",
+   "id": "t1945",
+   "v": "yes",
+   "why": "Bounding box regression losses for object detection fit the topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t7038",
+   "v": "partly",
+   "why": "Augmentation for low-level vision, not ImageNet curation or classification."
+  },
+  {
+   "kind": "topic",
+   "id": "t6240",
+   "v": "yes",
+   "why": "Paper analyzes convergence of SGD with stochastic Polyak stepsizes."
+  },
+  {
+   "kind": "topic",
+   "id": "t7014",
+   "v": "no",
+   "why": "Paper is about time series generation (GAN), not forecasting."
+  },
+  {
+   "kind": "topic",
+   "id": "t5519",
+   "v": "no",
+   "why": "Paper is fine-grained recognition via relational proxies, not dataset distillation or long-tail."
+  },
+  {
+   "kind": "topic",
+   "id": "t5093",
+   "v": "yes",
+   "why": "Analyzes SGD consistency and finite-sample excess risk bounds for inverse problems."
+  },
+  {
+   "kind": "topic",
+   "id": "t5859",
+   "v": "yes",
+   "why": "Federated minimax optimization with communication efficiency and convergence guarantees."
+  },
+  {
+   "kind": "topic",
+   "id": "t5262",
+   "v": "yes",
+   "why": "Directly about neural image compression training with entropy/quantization estimators."
+  },
+  {
+   "kind": "topic",
+   "id": "t5656",
+   "v": "yes",
+   "why": "Gossip-based decentralized bilevel optimization fits distributed/decentralized optimization topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t5692",
+   "v": "yes",
+   "why": "Biologically plausible meta-learning rule generalizing contrastive Hebbian learning."
+  },
+  {
+   "kind": "topic",
+   "id": "t5773",
+   "v": "yes",
+   "why": "Paper is about extreme low-bit (binary/ternary) quantization of transformers."
+  },
+  {
+   "kind": "topic",
+   "id": "t6335",
+   "v": "partly",
+   "why": "UED/curriculum RL relates to generalization but not meta/goal-conditioned focus"
+  },
+  {
+   "kind": "topic",
+   "id": "t6844",
+   "v": "yes",
+   "why": "Paper directly studies learned optimizers' stability and inductive biases."
+  },
+  {
+   "kind": "topic",
+   "id": "t4544",
+   "v": "yes",
+   "why": "Hypergradient-based automatic optimizer tuning fits learned optimizers."
+  },
+  {
+   "kind": "topic",
+   "id": "t5626",
+   "v": "yes",
+   "why": "Personalized federated learning under label/task heterogeneity fits the topic directly."
+  },
+  {
+   "kind": "topic",
+   "id": "t4599",
+   "v": "yes",
+   "why": "Proposes probabilistic multi-objective extension of SVGD, directly within particle-based variational inference."
+  },
+  {
+   "kind": "topic",
+   "id": "t6515",
+   "v": "yes",
+   "why": "Paper explicitly frames contrastive learning as goal-conditioned RL."
+  },
+  {
+   "kind": "topic",
+   "id": "t9337",
+   "v": "yes",
+   "why": "Federated learning algorithm addressing client drift with theoretical analysis."
+  },
+  {
+   "kind": "topic",
+   "id": "t8330",
+   "v": "partly",
+   "why": "NLG evaluation metric, not data quality or benchmark reliability focus"
+  },
+  {
+   "kind": "topic",
+   "id": "t8312",
+   "v": "yes",
+   "why": "Paper directly addresses exploration via state entropy in RL."
+  },
+  {
+   "kind": "topic",
+   "id": "t9007",
+   "v": "no",
+   "why": "Generates motion from text via diffusion, not video action recognition."
+  },
+  {
+   "kind": "topic",
+   "id": "t7711",
+   "v": "yes",
+   "why": "Paper directly addresses Gromov-Wasserstein computation, core optimal transport topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t9775",
+   "v": "yes",
+   "why": "Paper is the SMACv2 benchmark for cooperative MARL, matching topic directly."
+  },
+  {
+   "kind": "topic",
+   "id": "t10017",
+   "v": "yes",
+   "why": "Uses text-to-image diffusion priors for consistent multi-image editing; fits topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t10068",
+   "v": "yes",
+   "why": "Paper provides theoretical framework for transfer learning regression, matching topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t9499",
+   "v": "yes",
+   "why": "Directly studies student-teacher deviations and distillation theory."
+  },
+  {
+   "kind": "topic",
+   "id": "t8399",
+   "v": "yes",
+   "why": "Theoretical performance bounds for policy-based average-reward RL fit RL theory."
+  },
+  {
+   "kind": "topic",
+   "id": "t7235",
+   "v": "yes",
+   "why": "Paper proposes deep GNN architectures addressing oversmoothing; core GNN topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t10606",
+   "v": "partly",
+   "why": "Spectral reconstruction from RGB is an inverse problem, but paper's focus is dataset release."
+  },
+  {
+   "kind": "topic",
+   "id": "t10045",
+   "v": "partly",
+   "why": "Neural approximation of optimization, not online algorithms with predictions."
+  },
+  {
+   "kind": "topic",
+   "id": "t8644",
+   "v": "partly",
+   "why": "Egocentric video with hands, but focus is agent-environment factorization for robotics, not pose/touch."
+  },
+  {
+   "kind": "topic",
+   "id": "t8623",
+   "v": "yes",
+   "why": "Paper's main task is semantic segmentation via distillation."
+  },
+  {
+   "kind": "topic",
+   "id": "t9022",
+   "v": "yes",
+   "why": "Paper proposes a NeRF prior method, clearly a NeRF variant."
+  },
+  {
+   "kind": "topic",
+   "id": "t8863",
+   "v": "yes",
+   "why": "Robust online estimation of time-varying parameters under heavy tails and corruption."
+  },
+  {
+   "kind": "topic",
+   "id": "t7505",
+   "v": "partly",
+   "why": "Reaction prediction and interpretability, not molecule generation or drug design"
+  },
+  {
+   "kind": "topic",
+   "id": "t8767",
+   "v": "no",
+   "why": "Paper is about in-network regex acceleration, not membership inference attacks."
+  },
+  {
+   "kind": "topic",
+   "id": "t9533",
+   "v": "partly",
+   "why": "Adversarial attack on multi-exit models, not LLM jailbreaking."
+  },
+  {
+   "kind": "topic",
+   "id": "t14801",
+   "v": "no",
+   "why": "Paper is about privacy-preserving adaptation of LLMs, not safety or jailbreaks."
+  },
+  {
+   "kind": "topic",
+   "id": "t11671",
+   "v": "yes",
+   "why": "Introduces a multimodal visual QA benchmark dataset on scientific figures."
+  },
+  {
+   "kind": "topic",
+   "id": "t14203",
+   "v": "yes",
+   "why": "Paper estimates conditional quantile treatment effects, a causal treatment effect estimation method."
+  },
+  {
+   "kind": "topic",
+   "id": "t14866",
+   "v": "yes",
+   "why": "Paper analyzes RNN optimization and memory; fits recurrent networks topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t14740",
+   "v": "partly",
+   "why": "Involves image generation but focuses on one-shot sketching and latent inductive biases, not evaluation metrics."
+  },
+  {
+   "kind": "topic",
+   "id": "t13979",
+   "v": "partly",
+   "why": "Diffusion-based image editing, but reference-driven face swapping, not instruction/text-guided editing."
+  },
+  {
+   "kind": "topic",
+   "id": "t15015",
+   "v": "partly",
+   "why": "Phylogenetic rate-matrix estimation for variant effect prediction, not protein modeling/design."
+  },
+  {
+   "kind": "topic",
+   "id": "t12836",
+   "v": "no",
+   "why": "Cryo-EM reconstruction/pose inference, not molecule generation or drug design."
+  },
+  {
+   "kind": "topic",
+   "id": "t14158",
+   "v": "partly",
+   "why": "Diffusion-based generative modeling, but focus is density ratio estimation/classification, not score theory."
+  },
+  {
+   "kind": "topic",
+   "id": "t14643",
+   "v": "yes",
+   "why": "Paper directly addresses continual learning and forgetting via model sensitivity."
+  },
+  {
+   "kind": "topic",
+   "id": "t14920",
+   "v": "yes",
+   "why": "LLM-based automated PDDL generation for planning fits LLM agents and planning."
+  },
+  {
+   "kind": "topic",
+   "id": "t14961",
+   "v": "yes",
+   "why": "Directly about feature attribution explanations and their evaluation."
+  },
+  {
+   "kind": "topic",
+   "id": "t10925",
+   "v": "yes",
+   "why": "Mamba-based 3D object detection from point clouds fits LiDAR 3D detection topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t12557",
+   "v": "yes",
+   "why": "Transformer for multi-task robot policy learning via imitation fits manipulation learning."
+  },
+  {
+   "kind": "topic",
+   "id": "t11774",
+   "v": "partly",
+   "why": "Holistic VLM evaluation benchmark, broader than VQA-focused topic"
+  },
+  {
+   "kind": "topic",
+   "id": "t11118",
+   "v": "yes",
+   "why": "Constrained LLM alignment via preference optimization fits the topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t15004",
+   "v": "yes",
+   "why": "Paper analyzes transfer learning/fine-tuning in linear models with rigorous theory."
+  },
+  {
+   "kind": "topic",
+   "id": "t11558",
+   "v": "no",
+   "why": "Paper is about referring expression comprehension benchmark, not gaze or social perception."
+  },
+  {
+   "kind": "topic",
+   "id": "t14235",
+   "v": "no",
+   "why": "Paper addresses noisy labels, not class imbalance."
+  },
+  {
+   "kind": "topic",
+   "id": "t14568",
+   "v": "yes",
+   "why": "Uses speculative decoding with nearest neighbors for faster, attributed generation."
+  },
+  {
+   "kind": "topic",
+   "id": "t11884",
+   "v": "yes",
+   "why": "Paper analyzes self-distillation theory, directly within knowledge distillation topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t14667",
+   "v": "yes",
+   "why": "Paper directly addresses federated learning with non-IID client heterogeneity."
+  },
+  {
+   "kind": "topic",
+   "id": "t12593",
+   "v": "yes",
+   "why": "Theoretical score approximation and sample complexity for latent diffusion transformers."
+  },
+  {
+   "kind": "topic",
+   "id": "t11717",
+   "v": "yes",
+   "why": "Paper is a benchmark for prompt injection attacks/defenses on tool-using LLM agents."
+  },
+  {
+   "kind": "topic",
+   "id": "t14460",
+   "v": "yes",
+   "why": "LLM-based sequential recommendation with instance-wise LoRA fits recommender systems topic"
+  },
+  {
+   "kind": "topic",
+   "id": "t14563",
+   "v": "partly",
+   "why": "Differentiable top-k module for losses, not learned optimizers per se."
+  },
+  {
+   "kind": "topic",
+   "id": "t21110",
+   "v": "yes",
+   "why": "Paper builds anomaly detection dataset for industrial anomaly detection with MLLMs."
+  },
+  {
+   "kind": "topic",
+   "id": "t19726",
+   "v": "no",
+   "why": "Oligonucleotide datasets/benchmarks, not protein modeling or design."
+  },
+  {
+   "kind": "topic",
+   "id": "t17313",
+   "v": "yes",
+   "why": "Doubly robust functional estimation for causal inference (ECC) fits causal estimation topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t19842",
+   "v": "yes",
+   "why": "Paper studies counterfactual inference in cyclic SCMs, matching topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t18550",
+   "v": "yes",
+   "why": "Paper directly measures SAE feature monosemanticity, core to this topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t20743",
+   "v": "yes",
+   "why": "Continual learning with parameter-efficient tuning to avoid forgetting; exact match."
+  },
+  {
+   "kind": "topic",
+   "id": "t17777",
+   "v": "yes",
+   "why": "Paper directly addresses offline RL generalization from static datasets."
+  },
+  {
+   "kind": "topic",
+   "id": "t19747",
+   "v": "partly",
+   "why": "Multi-task RL with reward shaping, not cooperative multi-agent control"
+  },
+  {
+   "kind": "topic",
+   "id": "t20556",
+   "v": "yes",
+   "why": "Curiosity-driven exploration in MARL fits skill discovery/curriculum RL topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t19368",
+   "v": "yes",
+   "why": "Neural mesh movement for PDE simulation fits neural physics simulation."
+  },
+  {
+   "kind": "topic",
+   "id": "t20977",
+   "v": "yes",
+   "why": "Event-aided 3D Gaussian splatting scene reconstruction fits topic directly."
+  },
+  {
+   "kind": "topic",
+   "id": "t19180",
+   "v": "yes",
+   "why": "Multimodal instruction dataset and benchmark for dental X-ray imaging fits medical imaging foundation models."
+  },
+  {
+   "kind": "topic",
+   "id": "t18549",
+   "v": "partly",
+   "why": "Peptide classification benchmark, not protein modeling/design"
+  },
+  {
+   "kind": "topic",
+   "id": "t18804",
+   "v": "yes",
+   "why": "Paper studies and measures hallucination in multimodal reasoning models."
+  },
+  {
+   "kind": "topic",
+   "id": "t16916",
+   "v": "partly",
+   "why": "Compresses text tokens into images for LLM efficiency, not visual-token compression in multimodal LLMs."
+  },
+  {
+   "kind": "topic",
+   "id": "t17668",
+   "v": "yes",
+   "why": "Sparse perception pre-training for autonomous driving 3D perception fits the topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t17460",
+   "v": "yes",
+   "why": "Paper is 3D anomaly detection for industrial quality control."
+  },
+  {
+   "kind": "topic",
+   "id": "t15331",
+   "v": "partly",
+   "why": "Fairness in matroid selection, not demographic group fairness constraints"
+  },
+  {
+   "kind": "topic",
+   "id": "t15527",
+   "v": "partly",
+   "why": "Steganography via generative models, not watermarking; related but different goal."
+  },
+  {
+   "kind": "topic",
+   "id": "t16484",
+   "v": "yes",
+   "why": "Paper is a learning-from-demonstrations method, squarely imitation learning."
+  },
+  {
+   "kind": "topic",
+   "id": "t20628",
+   "v": "yes",
+   "why": "Analyzes safety alignment of MoE LLMs via safety-critical experts, fitting safety topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t20149",
+   "v": "no",
+   "why": "Paper estimates influence functions via RKHS, not kernel ridge regression theory."
+  },
+  {
+   "kind": "topic",
+   "id": "t19010",
+   "v": "no",
+   "why": "Skill assessment and transferable attributes, not gaze or social reasoning."
+  },
+  {
+   "kind": "topic",
+   "id": "t19540",
+   "v": "no",
+   "why": "Paper is about exact algorithmic execution via NTK, not logic gate/analog hardware networks."
+  },
+  {
+   "kind": "topic",
+   "id": "t19267",
+   "v": "partly",
+   "why": "Traffic control via MARL, not autonomous driving planning"
+  },
+  {
+   "kind": "topic",
+   "id": "t18205",
+   "v": "yes",
+   "why": "Paper improves regret and constraint violation bounds in online convex optimization."
+  },
+  {
+   "kind": "topic",
+   "id": "t16894",
+   "v": "yes",
+   "why": "Paper evaluates goodness-of-fit tests for LLM watermark detection, squarely within topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t17387",
+   "v": "yes",
+   "why": "Paper directly improves 3DGS for robust reconstruction/novel view synthesis."
+  },
+  {
+   "kind": "topic",
+   "id": "t20931",
+   "v": "partly",
+   "why": "Multimodal imbalance/collapse related, but main contribution is dataset distillation, not fusion."
+  },
+  {
+   "kind": "topic",
+   "id": "t19234",
+   "v": "yes",
+   "why": "Transformer neural surrogate for multiphase PDE simulation of boiling"
+  },
+  {
+   "kind": "topic",
+   "id": "t19079",
+   "v": "yes",
+   "why": "Differentially private text generation fits DP synthesis topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t19445",
+   "v": "partly",
+   "why": "IQA/quality understanding relates to quality metrics, but not text-to-image generation evaluation."
+  },
+  {
+   "kind": "topic",
+   "id": "t19329",
+   "v": "yes",
+   "why": "Paper directly analyzes multi-agent debate effectiveness for LLMs."
+  },
+  {
+   "kind": "topic",
+   "id": "t26942",
+   "v": "partly",
+   "why": "Graph representation learning, but not GNN-specific; focuses on graph embeddings/diversity."
+  },
+  {
+   "kind": "topic",
+   "id": "t28650",
+   "v": "yes",
+   "why": "Benchmark for AI research agents, fits LLM agent benchmarks."
+  },
+  {
+   "kind": "topic",
+   "id": "t30072",
+   "v": "partly",
+   "why": "Evaluates cyber-attack capability of agents, not prompt injection/defense focus"
+  },
+  {
+   "kind": "topic",
+   "id": "t21553",
+   "v": "no",
+   "why": "Paper is about MDP sub-policy composition and LLM post-training, not combinatorial optimization."
+  },
+  {
+   "kind": "topic",
+   "id": "t24977",
+   "v": "yes",
+   "why": "Analyzes error recovery and critique in chain-of-thought reasoning of reasoning models."
+  },
+  {
+   "kind": "topic",
+   "id": "t25339",
+   "v": "partly",
+   "why": "Evaluates audio-language models' pitch perception, not generation."
+  },
+  {
+   "kind": "topic",
+   "id": "t27257",
+   "v": "yes",
+   "why": "Paper proposes exact unlearning method, directly matching topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t22412",
+   "v": "partly",
+   "why": "About LLM safety judge reliability, not agent security attacks/monitoring."
+  },
+  {
+   "kind": "topic",
+   "id": "t26999",
+   "v": "yes",
+   "why": "Paper directly addresses unsupervised domain adaptation under covariate shift."
+  },
+  {
+   "kind": "topic",
+   "id": "t28070",
+   "v": "partly",
+   "why": "Bandit-adjacent adaptive inference, but focus is statistical inference, not regret bounds."
+  },
+  {
+   "kind": "topic",
+   "id": "t24552",
+   "v": "partly",
+   "why": "Graph generative diffusion model, not GNN message passing/expressivity focus"
+  },
+  {
+   "kind": "topic",
+   "id": "t27192",
+   "v": "yes",
+   "why": "Point cloud upsampling via flow matching fits topic directly."
+  },
+  {
+   "kind": "topic",
+   "id": "t23543",
+   "v": "yes",
+   "why": "Paper trains LLM reasoning from expert actions, fitting reasoning topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t26826",
+   "v": "yes",
+   "why": "Improves VLA inference for robot manipulation, fitting the topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t27563",
+   "v": "yes",
+   "why": "Paper directly proposes an LLM unlearning method balancing forget and retain utility."
+  },
+  {
+   "kind": "topic",
+   "id": "t21972",
+   "v": "yes",
+   "why": "Grounds language into part-level geometric/actionable spatial representations in VLMs."
+  },
+  {
+   "kind": "topic",
+   "id": "t29847",
+   "v": "yes",
+   "why": "Directly about scheduling parallel LLM decoding branches in serving systems."
+  },
+  {
+   "kind": "topic",
+   "id": "t24666",
+   "v": "no",
+   "why": "Paper studies human learning/brain alignment, not ad hoc teamwork coordination."
+  },
+  {
+   "kind": "topic",
+   "id": "t27832",
+   "v": "partly",
+   "why": "Math reasoning evaluation, but no theorem proving or Lean involved."
+  },
+  {
+   "kind": "topic",
+   "id": "t26071",
+   "v": "partly",
+   "why": "Analyzes agent behavior/taxonomy, not a benchmark or evaluation protocol."
+  },
+  {
+   "kind": "topic",
+   "id": "t22387",
+   "v": "no",
+   "why": "Paper benchmarks spatiotemporal point processes, not weather/climate forecasting."
+  },
+  {
+   "kind": "topic",
+   "id": "t23704",
+   "v": "yes",
+   "why": "Paper directly proposes post-training quantization of LLM weights."
+  },
+  {
+   "kind": "topic",
+   "id": "t26636",
+   "v": "yes",
+   "why": "Paper directly addresses ad hoc teamwork with unseen partners via unified training framework."
+  },
+  {
+   "kind": "topic",
+   "id": "t23044",
+   "v": "yes",
+   "why": "Enhances VLM multimodal reasoning via transferring LLM reasoning vectors."
+  },
+  {
+   "kind": "topic",
+   "id": "t27152",
+   "v": "partly",
+   "why": "Evaluates molecular representations for small molecules, not generation or drug design."
+  },
+  {
+   "kind": "topic",
+   "id": "t21310",
+   "v": "yes",
+   "why": "Evaluates LLM agent scheming propensity via benchmark-like settings and protocols."
+  },
+  {
+   "kind": "topic",
+   "id": "t22339",
+   "v": "yes",
+   "why": "Paper compresses dynamic 3D Gaussian splatting scenes, directly matching topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t21116",
+   "v": "partly",
+   "why": "Multimodal task solving, but focus is coding agents/tool use, not visual reasoning training."
+  },
+  {
+   "kind": "topic",
+   "id": "t27175",
+   "v": "partly",
+   "why": "Game-theoretic alignment, but focus is robust RLHF, not learning dynamics convergence."
+  },
+  {
+   "kind": "topic",
+   "id": "t28967",
+   "v": "yes",
+   "why": "Retrosynthesis filtering for drug-like targets fits molecule generation/drug design topic."
+  },
+  {
+   "kind": "topic",
+   "id": "t28495",
+   "v": "yes",
+   "why": "Paper proposes KV-cache eviction method, exactly matching topic."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a3400",
+   "v": "yes",
+   "why": "Identical abstract text and title."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a8370",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a10443",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a5023",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a1797",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a11293",
+   "v": "yes",
+   "why": "Identical text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a14995",
+   "v": "yes",
+   "why": "Identical abstracts, same method LAST."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a6463",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a213",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a13139",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a20707",
+   "v": "yes",
+   "why": "Identical text, same ECOCSeg paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a5620",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a9364",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a19870",
+   "v": "yes",
+   "why": "Identical abstract text and title; same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a5469",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a12196",
+   "v": "yes",
+   "why": "Identical text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a3458",
+   "v": "yes",
+   "why": "Identical abstract text, only minor wording differences."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a17543",
+   "v": "yes",
+   "why": "Identical text and title; same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a6670",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a5644",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a12826",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a17306",
+   "v": "yes",
+   "why": "Identical text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a16430",
+   "v": "yes",
+   "why": "Identical abstract text, same topic and wording."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a6199",
+   "v": "yes",
+   "why": "Identical abstracts, same method FlexSubNet."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a8279",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a15813",
+   "v": "yes",
+   "why": "Identical abstracts, same title."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a562",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a4416",
+   "v": "yes",
+   "why": "Identical abstract text, same CSST paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a16384",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a2986",
+   "v": "yes",
+   "why": "Identical abstracts, same MAPTF paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a2072",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a14557",
+   "v": "yes",
+   "why": "Identical title and opening text; same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a14823",
+   "v": "yes",
+   "why": "Identical opening text; same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a1039",
+   "v": "yes",
+   "why": "Identical abstract text; same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a1030",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a20001",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a13743",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a12729",
+   "v": "yes",
+   "why": "Same topic and pipeline; wording differs slightly, likely same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a18882",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a13670",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a5047",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a20962",
+   "v": "yes",
+   "why": "Identical abstract text; same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a19598",
+   "v": "yes",
+   "why": "Identical abstract text, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a7167",
+   "v": "yes",
+   "why": "Identical text, same SynGen paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a6421",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a8710",
+   "v": "yes",
+   "why": "Identical text and title; same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a18209",
+   "v": "yes",
+   "why": "Nearly identical abstracts, same title and content."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a14102",
+   "v": "yes",
+   "why": "Nearly identical abstracts, same paper."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a19254",
+   "v": "yes",
+   "why": "Identical text, same paper PREAMBLE."
+  },
+  {
+   "kind": "arxiv",
+   "id": "a9801",
+   "v": "yes",
+   "why": "Identical abstracts, same paper."
+  },
+  {
+   "kind": "control",
+   "id": "t12593",
+   "v": "no",
+   "why": "Theory of latent diffusion transformers, not AI agents or debate."
+  },
+  {
+   "kind": "control",
+   "id": "t4599",
+   "v": "no",
+   "why": "Paper is about sampling/optimization, not multi-agent games."
+  },
+  {
+   "kind": "control",
+   "id": "t17668",
+   "v": "no",
+   "why": "Paper is about sparse perception pre-training via splatting, not curved-space embeddings."
+  },
+  {
+   "kind": "control",
+   "id": "t3620",
+   "v": "no",
+   "why": "Paper is about graph spectral filters, not Shapley attribution."
+  },
+  {
+   "kind": "control",
+   "id": "t2228",
+   "v": "no",
+   "why": "Paper is about image denoising/noise generation via GANs, not SAE interpretability."
+  },
+  {
+   "kind": "control",
+   "id": "t27832",
+   "v": "no",
+   "why": "Paper is LLM math reasoning evaluation, unrelated to normalizing flows."
+  },
+  {
+   "kind": "control",
+   "id": "t7038",
+   "v": "no",
+   "why": "Paper is low-level vision data augmentation, unrelated to graphs."
+  },
+  {
+   "kind": "control",
+   "id": "t19747",
+   "v": "no",
+   "why": "Paper is multi-task RL reward shaping, unrelated to counterfactual explanations."
+  },
+  {
+   "kind": "control",
+   "id": "t3908",
+   "v": "no",
+   "why": "Meta-learning optimization for non-convex functions; unrelated to NeRF novel-view synthesis."
+  },
+  {
+   "kind": "control",
+   "id": "t24552",
+   "v": "no",
+   "why": "Graph node/edge generation, not low-level vision tasks"
+  },
+  {
+   "kind": "control",
+   "id": "t8623",
+   "v": "no",
+   "why": "Paper is about knowledge distillation for semantic segmentation, not video-language understanding."
+  },
+  {
+   "kind": "control",
+   "id": "t1832",
+   "v": "no",
+   "why": "Paper is about identifiability of energy-based models and nonlinear ICA, not contrastive learning."
+  },
+  {
+   "kind": "control",
+   "id": "t3739",
+   "v": "no",
+   "why": "Paper is about unsupervised environment design in RL, not RLHF reward modeling."
+  },
+  {
+   "kind": "control",
+   "id": "t18205",
+   "v": "no",
+   "why": "Paper is online convex optimization with constraints, unrelated to equivariant networks."
+  },
+  {
+   "kind": "control",
+   "id": "t20149",
+   "v": "partly",
+   "why": "Estimates influence functions via RKHS; related to kernel methods/gradients but not SVGD."
+  },
+  {
+   "kind": "control",
+   "id": "t1908",
+   "v": "no",
+   "why": "Paper is differential privacy/MCMC sampling, unrelated to continual learning."
+  },
+  {
+   "kind": "control",
+   "id": "t11671",
+   "v": "no",
+   "why": "Paper is a multimodal QA dataset, not ViT architecture improvements."
+  },
+  {
+   "kind": "control",
+   "id": "t1945",
+   "v": "no",
+   "why": "Paper is about bounding box regression losses, not video generation."
+  },
+  {
+   "kind": "control",
+   "id": "t19010",
+   "v": "no",
+   "why": "Paper is about transferable skill assessment in video, not training dynamics or sparsity."
+  },
+  {
+   "kind": "control",
+   "id": "t3704",
+   "v": "yes",
+   "why": "Empirical study of domain generalization theory for ERM; transfer learning theory related."
+  },
+  {
+   "kind": "control",
+   "id": "t5656",
+   "v": "no",
+   "why": "Paper is decentralized bilevel optimization, not Adam/SAM theory."
+  },
+  {
+   "kind": "control",
+   "id": "t7505",
+   "v": "no",
+   "why": "Paper is chemistry reaction prediction, unrelated to image generation evaluation."
+  },
+  {
+   "kind": "control",
+   "id": "t27192",
+   "v": "no",
+   "why": "Paper is about point cloud upsampling via flow matching, not invariance learning."
+  },
+  {
+   "kind": "control",
+   "id": "t12557",
+   "v": "no",
+   "why": "Multi-task robot policy transformer, not knowledge distillation."
+  },
+  {
+   "kind": "control",
+   "id": "t11774",
+   "v": "no",
+   "why": "Paper is VLM benchmarking/evaluation, unrelated to federated learning."
+  },
+  {
+   "kind": "control",
+   "id": "t7235",
+   "v": "no",
+   "why": "Paper is about GNN architectures via dynamical systems, not diffusion samplers."
+  },
+  {
+   "kind": "control",
+   "id": "t210",
+   "v": "no",
+   "why": "Paper is about cost-efficient ML API selection, not neural network verification."
+  },
+  {
+   "kind": "control",
+   "id": "t5093",
+   "v": "no",
+   "why": "Paper is about SGD for statistical inverse problems, not transfer learning."
+  },
+  {
+   "kind": "control",
+   "id": "t1761",
+   "v": "no",
+   "why": "Video-text multimodal transformer, not dynamical systems modeling."
+  },
+  {
+   "kind": "control",
+   "id": "t14961",
+   "v": "no",
+   "why": "Paper on feature attribution explanations, unrelated to diffusion models."
+  },
+  {
+   "kind": "control",
+   "id": "t19540",
+   "v": "no",
+   "why": "Paper is about exact algorithmic execution via NTK, not test-time adaptation."
+  },
+  {
+   "kind": "control",
+   "id": "t21972",
+   "v": "no",
+   "why": "Paper is about affordance reasoning, not diffusion theory."
+  },
+  {
+   "kind": "control",
+   "id": "t5626",
+   "v": "no",
+   "why": "Paper is personalized federated learning, not bilevel optimization algorithms."
+  },
+  {
+   "kind": "control",
+   "id": "t8644",
+   "v": "partly",
+   "why": "Uses diffusion inpainting for agent-environment factorization, not segmentation data synthesis."
+  },
+  {
+   "kind": "control",
+   "id": "t22339",
+   "v": "no",
+   "why": "Paper is about Gaussian splatting video compression, unrelated to OOD detection."
+  },
+  {
+   "kind": "control",
+   "id": "t14643",
+   "v": "no",
+   "why": "Continual learning paper, unrelated to 3D surface reconstruction."
+  },
+  {
+   "kind": "control",
+   "id": "t26999",
+   "v": "no",
+   "why": "Paper is domain adaptation theory, unrelated to sparse autoencoders."
+  },
+  {
+   "kind": "control",
+   "id": "t22412",
+   "v": "no",
+   "why": "Paper evaluates LLM safety judges, unrelated to private inference or DP synthesis."
+  },
+  {
+   "kind": "control",
+   "id": "t6515",
+   "v": "no",
+   "why": "Paper is about RL representation learning, not LLM reasoning."
+  },
+  {
+   "kind": "control",
+   "id": "t28650",
+   "v": "yes",
+   "why": "Benchmark for evaluating AI research agent strategies fits ML evaluation methodology."
+  },
+  {
+   "kind": "control",
+   "id": "t15527",
+   "v": "no",
+   "why": "Paper is video steganography, not sign language translation."
+  },
+  {
+   "kind": "control",
+   "id": "t19726",
+   "v": "no",
+   "why": "Paper is about oligonucleotide drug discovery datasets, unrelated to autonomous driving."
+  },
+  {
+   "kind": "control",
+   "id": "t26826",
+   "v": "no",
+   "why": "Paper is about VLA robot action correction, unrelated to auctions/pricing."
+  },
+  {
+   "kind": "control",
+   "id": "t4141",
+   "v": "no",
+   "why": "Reinforcement learning regret analysis, unrelated to embeddings or geometry."
+  },
+  {
+   "kind": "control",
+   "id": "t27257",
+   "v": "no",
+   "why": "Paper is about machine unlearning, not LLM pruning or compression."
+  },
+  {
+   "kind": "control",
+   "id": "t16894",
+   "v": "no",
+   "why": "Paper is about watermark detection via GoF tests, unrelated to concept bottleneck models."
+  },
+  {
+   "kind": "control",
+   "id": "t14667",
+   "v": "no",
+   "why": "Paper is about federated learning with diffusion, not vision backbones."
+  },
+  {
+   "kind": "control",
+   "id": "t27152",
+   "v": "no",
+   "why": "Paper evaluates co-folding model representations, not dataset distillation or long-tail."
+  },
+  {
+   "kind": "control",
+   "id": "t10068",
+   "v": "no",
+   "why": "Paper is transfer learning regression theory, not LLM knowledge editing."
+  },
+  {
+   "kind": "control",
+   "id": "t21116",
+   "v": "no",
+   "why": "Paper is about coding agents for multimodal tasks, not attention efficiency."
+  }
+ ]
+}

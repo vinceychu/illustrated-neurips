@@ -1,0 +1,52 @@
+[project]
+name = "illustrated-neurips-paper"
+version = "6.0.0"
+description = "Evaluation code for 'Illustrated NeurIPS: A Navigable Map of 30,225 NeurIPS Papers (2020-2026)'"
+readme = "README.md"
+license = { text = "MIT (code); CC-BY-4.0 (paper, figures, results)" }
+authors = [{ name = "Vincent Chu", email = "vcx@umich.edu" }]
+requires-python = ">=3.11"
+# Versions used for the published results (see requirements.txt for the exact pins).
+dependencies = [
+    "numpy>=2.0",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+retrieval = ["sentence-transformers>=3.0", "torch>=2.4"]
+pipeline = ["umap-learn>=0.5"]
+dev = ["ruff==0.14.5", "pytest==8.4.2"]
+
+[project.urls]
+Paper = "https://doi.org/10.5281/zenodo.24301136"
+Map = "https://vincentychu.com/neurips/"
+
+[tool.setuptools]
+packages = ["eval"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["build"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "C4", "PL"]
+ignore = [
+    "PLR0913",  # analysis functions take several arrays
+    "PLR2004",  # magic values are the paper's constants
+    "RUF001",   # en dashes in docstrings are intentional
+    "RUF002",
+    "C408",     # dict(...) mirrors the JSON field names
+    "PLC0415",  # heavy imports are lazy so --help and the data-free checks need only the stdlib
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["PLR2004", "S101"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
